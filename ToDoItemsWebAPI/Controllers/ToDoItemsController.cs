@@ -98,7 +98,7 @@ namespace ToDoItemsWebAPI.Controllers
 
         // DELETE: api/ToDoItems/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteToDoItem([FromRoute] long id)
+        public async Task<IActionResult> DeleteToDoItem([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
